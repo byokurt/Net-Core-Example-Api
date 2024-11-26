@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace DotnetCoreExampleApi.Constant;
+namespace NetCoreExampleApi.Constant;
 
 public static class LoggingEvents
 {

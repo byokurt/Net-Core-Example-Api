@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Models.Pagination;
 using Microsoft.EntityFrameworkCore;
+using NetCoreExampleApi.Models.Pagination;
 
-namespace DotnetCoreExampleApi.Extensions
+namespace NetCoreExampleApi.Extensions
 {
 	public static class QueryableExtensions
 	{

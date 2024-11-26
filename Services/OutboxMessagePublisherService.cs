@@ -4,20 +4,20 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Dapper;
-using DotnetCoreExampleApi.Constant;
-using DotnetCoreExampleApi.Data.Entities;
-using DotnetCoreExampleApi.Services.Interfaces;
 using MassTransit;
 using Medallion.Threading;
 using Medallion.Threading.Redis;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using NetCoreExampleApi.Constant;
+using NetCoreExampleApi.Data.Entities;
+using NetCoreExampleApi.Services.Interfaces;
 using Polly;
 using Polly.Fallback;
 using Polly.Retry;
 
-namespace DotnetCoreExampleApi.Services;
+namespace NetCoreExampleApi.Services;
 
 public class OutboxMessagePublisherService : IOutboxMessagePublisherService
 {

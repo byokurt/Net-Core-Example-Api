@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Events;
+﻿namespace NetCoreExampleApi.Events;
 
 public class DemoEvent
 {

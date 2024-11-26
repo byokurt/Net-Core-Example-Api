@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Models.Pagination
+﻿namespace NetCoreExampleApi.Models.Pagination
 {
 	public class PagedRequest
 	{

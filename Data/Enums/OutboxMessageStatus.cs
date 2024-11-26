@@ -1,4 +1,4 @@
-namespace DotnetCoreExampleApi.Data.Enums;
+namespace NetCoreExampleApi.Data.Enums;
 
 public enum OutboxMessageStatus
 {

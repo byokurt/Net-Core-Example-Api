@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Primitives;
 
-namespace DotnetCoreExampleApi.Middleware;
+namespace NetCoreExampleApi.Middleware;
 
 public class CorrelationIdMiddleware
 {

@@ -1,7 +1,7 @@
 using System;
-using DotnetCoreExampleApi.Data.Entities;
+using NetCoreExampleApi.Data.Entities;
 
-namespace DotnetCoreExampleApi.Factories.Interfaces;
+namespace NetCoreExampleApi.Factories.Interfaces;
 
 public interface IOutboxMessageFactory
 {

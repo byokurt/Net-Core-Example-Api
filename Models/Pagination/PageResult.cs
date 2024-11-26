@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotnetCoreExampleApi.Models.Pagination
+namespace NetCoreExampleApi.Models.Pagination
 {
     public class PageResult<T> : OkObjectResult
     {

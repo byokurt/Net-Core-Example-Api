@@ -1,4 +1,4 @@
-namespace DotnetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
+namespace NetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
 
 public enum TransactionType
 {

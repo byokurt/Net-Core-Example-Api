@@ -1,8 +1,8 @@
-﻿using DotnetCoreExampleApi.Data.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using NetCoreExampleApi.Data.Entities;
 
-namespace DotnetCoreExampleApi.Data.Mapping;
+namespace NetCoreExampleApi.Data.Mapping;
 
 public class UserMap : IEntityTypeConfiguration<User>
 {

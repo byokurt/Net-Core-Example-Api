@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 using System.Web;
 
-namespace DotnetCoreExampleApi.Extensions;
+namespace NetCoreExampleApi.Extensions;
 
 public static class HttpRequestExtensions
 {

@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Controllers.V1.Model.Responses
+﻿namespace NetCoreExampleApi.Controllers.V1.Model.Responses
 {
     public class QueryUsersResponse
     {

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Polly;
 using Polly.Extensions.Http;
 
-namespace DotnetCoreExampleApi.Extensions;
+namespace NetCoreExampleApi.Extensions;
 
 public static class HttpPolicies
 {

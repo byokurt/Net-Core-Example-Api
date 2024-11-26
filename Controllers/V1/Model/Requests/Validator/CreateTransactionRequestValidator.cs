@@ -1,8 +1,8 @@
-﻿using DotnetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Results;
+using NetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
 
-namespace DotnetCoreExampleApi.Controllers.V1.Model.Requests.Validator;
+namespace NetCoreExampleApi.Controllers.V1.Model.Requests.Validator;
 
 public class CreateTransactionRequestValidator : AbstractValidator<CreateTransactionRequest>
 {

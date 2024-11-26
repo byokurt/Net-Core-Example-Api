@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DotnetCoreExampleApi.Proxies.Demo.Responses;
+namespace NetCoreExampleApi.Proxies.Demo.Responses;
 
 public class DemoQueryResponse
 {

@@ -1,7 +1,7 @@
 using System;
-using DotnetCoreExampleApi.Data.Enums;
+using NetCoreExampleApi.Data.Enums;
 
-namespace DotnetCoreExampleApi.Data.Entities;
+namespace NetCoreExampleApi.Data.Entities;
 
 public class OutboxMessage
 {

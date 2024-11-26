@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using DotnetCoreExampleApi.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetCoreExampleApi.Data.Entities;
 
-namespace DotnetCoreExampleApi.Data.Seeds;
+namespace NetCoreExampleApi.Data.Seeds;
 
 public static class Seeder
 {

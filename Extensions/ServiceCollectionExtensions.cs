@@ -1,14 +1,14 @@
 ﻿using System;
-using DotnetCoreExampleApi.Consumers;
-using DotnetCoreExampleApi.Jobs;
 using MassTransit;
 using Medallion.Threading.Redis;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using NetCoreExampleApi.Consumers;
+using NetCoreExampleApi.Jobs;
 using StackExchange.Redis;
 
-namespace DotnetCoreExampleApi.Extensions;
+namespace NetCoreExampleApi.Extensions;
 
 public static class ServiceCollectionExtensions
 {

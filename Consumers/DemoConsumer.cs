@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using DotnetCoreExampleApi.Events;
 using MassTransit;
 using Microsoft.Extensions.Logging;
+using NetCoreExampleApi.Events;
 
-namespace DotnetCoreExampleApi.Consumers;
+namespace NetCoreExampleApi.Consumers;
 
 public class DemoConsumer : IConsumer<DemoEvent>
 {

@@ -6,14 +6,14 @@ using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Extensions;
-using DotnetCoreExampleApi.Proxies.Demo.Requests;
-using DotnetCoreExampleApi.Proxies.Demo.Responses;
+using NetCoreExampleApi.Extensions;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using NetCoreExampleApi.Proxies.Demo.Requests;
+using NetCoreExampleApi.Proxies.Demo.Responses;
 
-namespace DotnetCoreExampleApi.Proxies.Demo;
+namespace NetCoreExampleApi.Proxies.Demo;
 
 public class DemoApiProxy : IDemoApiProxy
 {

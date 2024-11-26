@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Constant;
+﻿namespace NetCoreExampleApi.Constant;
 
 public class AppConstant
 {

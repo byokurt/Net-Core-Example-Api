@@ -1,6 +1,6 @@
-﻿using DotnetCoreExampleApi.Models.Pagination;
+﻿using NetCoreExampleApi.Models.Pagination;
 
-namespace DotnetCoreExampleApi.Controllers.V1.Model.Requests
+namespace NetCoreExampleApi.Controllers.V1.Model.Requests
 {
     public class QueryUsersRequest : PagedRequest
     {

@@ -1,13 +1,13 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Services.Interfaces;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NetCoreExampleApi.Services.Interfaces;
 
-namespace DotnetCoreExampleApi.Jobs;
+namespace NetCoreExampleApi.Jobs;
 
 public class OutboxMessagePublisherHostedService : BackgroundService
 {

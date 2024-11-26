@@ -1,10 +1,10 @@
 using System;
 using System.Text.Json;
-using DotnetCoreExampleApi.Data.Entities;
-using DotnetCoreExampleApi.Data.Enums;
-using DotnetCoreExampleApi.Factories.Interfaces;
+using NetCoreExampleApi.Data.Entities;
+using NetCoreExampleApi.Data.Enums;
+using NetCoreExampleApi.Factories.Interfaces;
 
-namespace DotnetCoreExampleApi.Factories;
+namespace NetCoreExampleApi.Factories;
 
 public class OutboxMessageFactory : IOutboxMessageFactory
 {

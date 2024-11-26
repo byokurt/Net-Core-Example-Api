@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Serilog.Context;
 
-namespace DotnetCoreExampleApi.Middleware;
+namespace NetCoreExampleApi.Middleware;
 
 public class LoggingMiddleware
 {

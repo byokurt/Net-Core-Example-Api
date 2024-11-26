@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
-using DotnetCoreExampleApi.Handlers.Interfaces;
+using NetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
+using NetCoreExampleApi.Handlers.Interfaces;
 
-namespace DotnetCoreExampleApi.Handlers;
+namespace NetCoreExampleApi.Handlers;
 
 public class TransactionHandlerResolver : ITransactionHandlerResolver
 {

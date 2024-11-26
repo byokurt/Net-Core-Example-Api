@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Controllers.V1.Model.Requests;
+﻿namespace NetCoreExampleApi.Controllers.V1.Model.Requests;
 
 public class CreateUserRequest
 {

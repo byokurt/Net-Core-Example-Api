@@ -1,11 +1,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
-using DotnetCoreExampleApi.Handlers.Interfaces;
+using NetCoreExampleApi.Controllers.V1.Model.Requests;
+using NetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
+using NetCoreExampleApi.Handlers.Interfaces;
 
-namespace DotnetCoreExampleApi.Handlers.Withdrawal;
+namespace NetCoreExampleApi.Handlers.Withdrawal;
 
 public class WithdrawalTransactionHandler : ITransactionHandler
 {

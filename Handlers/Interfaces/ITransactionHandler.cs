@@ -1,10 +1,10 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
+using NetCoreExampleApi.Controllers.V1.Model.Requests;
+using NetCoreExampleApi.Controllers.V1.Model.Requests.Enums;
 
-namespace DotnetCoreExampleApi.Handlers.Interfaces;
+namespace NetCoreExampleApi.Handlers.Interfaces;
 
 public interface ITransactionHandler
 {

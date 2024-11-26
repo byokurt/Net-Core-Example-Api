@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 
-namespace DotnetCoreExampleApi.Controllers.V1.Model.Requests.Validator;
+namespace NetCoreExampleApi.Controllers.V1.Model.Requests.Validator;
 
 public class QueryUserRequestValidator : AbstractValidator<QueryUsersRequest>
 {

@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Proxies.Demo;
+﻿namespace NetCoreExampleApi.Proxies.Demo;
 
 public interface IDemoApiProxy
 {

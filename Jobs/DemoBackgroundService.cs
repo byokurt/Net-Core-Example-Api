@@ -6,7 +6,7 @@ using Medallion.Threading.Redis;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace DotnetCoreExampleApi.Jobs
+namespace NetCoreExampleApi.Jobs
 {
     public class DemoBackgroundService : BackgroundService
     {

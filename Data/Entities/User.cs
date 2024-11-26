@@ -1,4 +1,4 @@
-﻿namespace DotnetCoreExampleApi.Data.Entities;
+﻿namespace NetCoreExampleApi.Data.Entities;
 
 public class User
 {

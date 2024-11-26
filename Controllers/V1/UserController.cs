@@ -2,15 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests;
-using DotnetCoreExampleApi.Controllers.V1.Model.Responses;
-using DotnetCoreExampleApi.Data;
-using DotnetCoreExampleApi.Data.Entities;
-using DotnetCoreExampleApi.Events;
-using DotnetCoreExampleApi.Extensions;
-using DotnetCoreExampleApi.Factories.Interfaces;
-using DotnetCoreExampleApi.Filters;
-using DotnetCoreExampleApi.Models.Pagination;
+using NetCoreExampleApi.Extensions;
 using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
@@ -18,8 +10,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
+using NetCoreExampleApi.Controllers.V1.Model.Requests;
+using NetCoreExampleApi.Controllers.V1.Model.Responses;
+using NetCoreExampleApi.Data;
+using NetCoreExampleApi.Data.Entities;
+using NetCoreExampleApi.Events;
+using NetCoreExampleApi.Factories.Interfaces;
+using NetCoreExampleApi.Filters;
+using NetCoreExampleApi.Models.Pagination;
 
-namespace DotnetCoreExampleApi.Controllers.V1;
+namespace NetCoreExampleApi.Controllers.V1;
 
 [ApiController]
 [ApiVersion("1.0")]

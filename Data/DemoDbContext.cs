@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using DotnetCoreExampleApi.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using NetCoreExampleApi.Data.Entities;
 
-namespace DotnetCoreExampleApi.Data;
+namespace NetCoreExampleApi.Data;
 
 public class DemoDbContext : DbContext
 {

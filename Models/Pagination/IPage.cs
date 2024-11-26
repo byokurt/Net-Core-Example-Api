@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DotnetCoreExampleApi.Models.Pagination
+namespace NetCoreExampleApi.Models.Pagination
 {
     public interface IPage<T>
     {

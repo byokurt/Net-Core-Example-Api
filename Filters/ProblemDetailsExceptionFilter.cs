@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace DotnetCoreExampleApi.Filters;
+namespace NetCoreExampleApi.Filters;
 
 public class ProblemDetailsExceptionFilter : IExceptionFilter, IOrderedFilter
 {

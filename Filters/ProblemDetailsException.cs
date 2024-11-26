@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotnetCoreExampleApi.Filters;
+namespace NetCoreExampleApi.Filters;
 
 public class ProblemDetailsException : Exception
 {

@@ -1,13 +1,13 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DotnetCoreExampleApi.Controllers.V1.Model.Requests;
-using DotnetCoreExampleApi.Handlers.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using NetCoreExampleApi.Controllers.V1.Model.Requests;
+using NetCoreExampleApi.Handlers.Interfaces;
 
-namespace DotnetCoreExampleApi.Controllers.V1;
+namespace NetCoreExampleApi.Controllers.V1;
 
 [ApiController]
 [ApiVersion("1.0")]
