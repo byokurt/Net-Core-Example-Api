@@ -115,6 +115,8 @@ builder.Services.AddHttpClient<IDemoApiProxy, DemoApiProxy>(c =>
     c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 }).AddHeaderPropagation().AddPolicyHandler(HttpPolicies.GetRetryPolicy).AddPolicyHandler(HttpPolicies.GetCircuitBreakerPolicy());
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddRedis(builder.Configuration);
 
 builder.Services.AddMasTransit(builder.Configuration);

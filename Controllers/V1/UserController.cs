@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using NetCoreExampleApi.Controllers.V1.Model.Requests;
 using NetCoreExampleApi.Controllers.V1.Model.Responses;
@@ -33,6 +34,7 @@ public class UserController : ControllerBase
     private readonly IBus _bus;
     private readonly IDistributedCache _distributedCache;
     private readonly IOutboxMessageFactory _outboxMessageFactory;
+    private readonly IMemoryCache _memoryCache;
 
     public UserController(
         ILogger<UserController> logger,
@@ -40,7 +42,8 @@ public class UserController : ControllerBase
         ISendEndpointProvider sendEndpointProvider,
         IBus bus,
         IDistributedCache distributedCache, 
-        IOutboxMessageFactory outboxMessageFactory)
+        IOutboxMessageFactory outboxMessageFactory, 
+        IMemoryCache memoryCache)
     {
         _logger = logger;
         _demoDbContext = demoDbContext;
@@ -48,6 +51,7 @@ public class UserController : ControllerBase
         _bus = bus;
         _distributedCache = distributedCache;
         _outboxMessageFactory = outboxMessageFactory;
+        _memoryCache = memoryCache;
     }
 
     [HttpGet]
@@ -225,6 +229,37 @@ public class UserController : ControllerBase
             }
 
             await _distributedCache.Set($"user_{userId}", user, TimeSpan.FromMinutes(5));
+        }
+
+        return user;
+    }
+    
+    private async Task<User> GetAlternativeOrThrowExceptionIfUserNotFound(int userId)
+    {
+        User user = _memoryCache.Get<User>($"user_{userId}");
+
+        if (user == null)
+        {
+            user = await _demoDbContext.Users.FirstOrDefaultAsync(w => w.Id == userId);
+
+            if (user == null)
+            {
+                ProblemDetails problemDetails = new ProblemDetails()
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "User Not Found.",
+                    Type = "user-not-found",
+                    Detail = "There is no record at Db for the id",
+                    Extensions =
+                    {
+                        new KeyValuePair<string, object>("Id", 1)
+                    }
+                };
+
+                throw new ProblemDetailsException(problemDetails);
+            }
+
+            _memoryCache.Set(user, $"user_{userId}", TimeSpan.FromMinutes(5));
         }
 
         return user;
